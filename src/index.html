@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+  <header>
+    <img id=logo src="img/padlock.png">
+    <h1>CIPHER-CESAR</h1>
+  </header>
+  <section>
+    <input placeholder="Tu offset" id=myOffset type="text">
+    <button id=btnEncode> Cifrar </button>
+    <textarea placeholder="Escribe texto a cifrar" name="texto" id="textAreaEncode" cols="30" rows="10"></textarea>
+    <p id=resultEncode></p>
+    <input placeholder="Offset de tu amigo" id=yourOffset type="text">
+    <button id=btnDecode> Cifrar </button>
+    <textarea placeholder="Escribe texto a cifrar" name="texto" id="textAreaDecode" cols="30" rows="10"></textarea>
+    <p id=resultCipher></p>
+  </section>
 
   <div id="root"></div>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
+
 </html>

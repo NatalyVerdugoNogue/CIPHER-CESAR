@@ -1,29 +1,49 @@
 window.cipher = {
-  encode: (offset, message) => {
-    const charaEncode = message.length;
-    console.log(message);
-    console.log(offset);
+  encode: (offsetEncode, stringEncode) => {
+    const charaEncode = stringEncode.length;
+    console.log(stringEncode);
+    console.log(offsetEncode);
 
-    let finalMessage = '';
+    let finalMessageEncode = '';
     let letterEncode = 0;
     let funEncode = 0;
     let letterResEncode = 0;
 
     for (let i = 0; i < charaEncode; i++) {
-      letterEncode = message.charCodeAt(i);
+      letterEncode = stringEncode.charCodeAt(i);
       console.log('a', letterEncode);
       funEncode = 0;
-      funEncode = ((letterEncode - 65 + offset) % 26 + 65);
-      console.log('b', offset);
+      funEncode = ((letterEncode - 65 + offsetEncode) % 26 + 65);
+      console.log('b', offsetEncode);
       console.log('c', funEncode);
       letterResEncode = String.fromCharCode(funEncode);
-      finalMessage = finalMessage + letterResEncode;
+      finalMessageEncode = finalMessageEncode + letterResEncode;
     }
-    console.log(finalMessage);
-    return finalMessage;
-
+    console.log(finalMessageEncode);
+    return finalMessageEncode;
   },
-  decode: () => {
-    /* Acá va tu código */
+
+  decode: (offsetDecode, stringDecode) => {
+    const charaDecode = stringDecode.length;
+    console.log(stringDecode);
+    console.log(offsetDecode);
+
+    let finalMessageDecode = '';
+    let letterDecode = 0;
+    let funDecode = 0;
+    let letterResDecode = 0;
+
+    for (let j = 0; j < charaDecode; j++) {
+      letterDecode = stringDecode.charCodeAt(j);
+      console.log('a', letterDecode);
+      funDecode = 0
+      funDecode = ((letterDecode - 65 - offsetDecode) % 26 + 65);
+      console.log('b', offsetDecode);
+      console.log('c', funDecode);
+      letterResDecode = String.fromCharCode(funDecode);
+      finalMessageDecode = finalMessageDecode + letterResDecode;
+    }
+    console.log(finalMessageDecode);
+    return finalMessageDecode;
   }
 }

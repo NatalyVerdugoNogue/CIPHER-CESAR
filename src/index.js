@@ -6,12 +6,14 @@ window.onload = () => {
     encodeBtn.addEventListener('click', () => {
         const stringEncode = document.getElementById('textAreaEncode').value;
         const offsetMy = parseInt(document.getElementById('myOffset').value);
-        const TextEncode = window.cipher.encode(offsetMy, stringEncode);
+        const textEncode = window.cipher.encode(offsetMy, stringEncode);
+        document.getElementById('resultEncode').innerHTML = textEncode;
     })
 
     decodeBtn.addEventListener('click', () => {
         const stringDecode = document.getElementById('textAreaDecode').value;
         const offsetYour = parseInt(document.getElementById('yourOffset').value);
-        const TextDecode = window.cipher.decode(offsetYour, stringDecode);
+        const textDecode = window.cipher.decode(offsetYour, stringDecode);
+        document.getElementById('resultDecode').innerHTML = textDecode;
     })
 }

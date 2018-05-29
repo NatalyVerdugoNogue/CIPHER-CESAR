@@ -9,7 +9,7 @@ window.onload = () => {
   encodeBtn.addEventListener('click', () => {
     const stringEncode = document.getElementById('textAreaEncode').value;
     const offsetMy = parseInt(document.getElementById('myOffset').value);
-    const textEncode = window.cipher.encode(offsetMy, stringEncode);
+    const textEncode = window.cipher.encode(stringEncode, offsetMy);
     document.getElementById('resultEncode').innerHTML = textEncode;
   })
 
@@ -18,7 +18,7 @@ window.onload = () => {
   decodeBtn.addEventListener('click', () => {
     const stringDecode = document.getElementById('textAreaDecode').value;
     const offsetYour = parseInt(document.getElementById('yourOffset').value);
-    const textDecode = window.cipher.decode(offsetYour, stringDecode);
+    const textDecode = window.cipher.decode(stringDecode, offsetYour);
     document.getElementById('resultDecode').innerHTML = textDecode;
   })
 }

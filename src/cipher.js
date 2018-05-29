@@ -1,7 +1,7 @@
 window.cipher = {
 
   // Función encode 
-  encode: (offsetEncode, stringEncode) => {
+  encode: (stringEncode, offsetEncode) => {
 
     // Cambio de string a mayúsculas
     stringMayEncode = stringEncode.toUpperCase();
@@ -30,7 +30,7 @@ window.cipher = {
   },
 
   //Función decode, con la misma estructura que encode, cambio de variables y formula matemática
-  decode: (offsetDecode, stringDecode) => {
+  decode: (stringDecode, offsetDecode) => {
 
     stringMayDecode = stringDecode.toUpperCase();
     const charaDecode = stringMayDecode.length;

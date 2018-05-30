@@ -51,5 +51,18 @@ window.cipher = {
       finalMessageDecode = finalMessageDecode + letterResDecode;
     }
     return finalMessageDecode;
+  },
+
+  //Función que lee offset y retorna dos metodos que leen el mensaje
+  createCipherWithOffset: (whitOffset) => {
+    return {
+      encode: (stringEncode) => {
+        return window.cipher.encode(stringEncode, whitOffset);
+      },
+
+      decode: (stringDecode) => {
+        return window.cipher.decode(stringDecode, whitOffset);
+      }
+    };
   }
 };

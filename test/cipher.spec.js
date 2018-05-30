@@ -1,4 +1,3 @@
-
 describe('cipher', () => {
 
   it('debería ser un objeto', () => {

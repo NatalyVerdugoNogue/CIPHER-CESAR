@@ -9,8 +9,9 @@ window.onload = () => {
   encodeBtn.addEventListener('click', () => {
     const stringEncode = document.getElementById('textAreaEncode').value;
     const offsetMy = parseInt(document.getElementById('myOffset').value);
-    const textEncode = window.cipher.encode(stringEncode, offsetMy);
-    document.getElementById('resultEncode').innerHTML = textEncode;
+    const whitFunction = window.cipher.createCipherWithOffset(offsetMy);
+    const messageEncode = whitFunction.encode(stringEncode);
+    document.getElementById('resultEncode').innerHTML = messageEncode;
   });
 
   /* Ejecución de botón decode tomado datos desde html Input, textArea
@@ -18,7 +19,8 @@ window.onload = () => {
   decodeBtn.addEventListener('click', () => {
     const stringDecode = document.getElementById('textAreaDecode').value;
     const offsetYour = parseInt(document.getElementById('yourOffset').value);
-    const textDecode = window.cipher.decode(stringDecode, offsetYour);
-    document.getElementById('resultDecode').innerHTML = textDecode;
+    const whitFunction = window.cipher.createCipherWithOffset(offsetYour);
+    const messageDecode = whitFunction.decode(stringDecode);
+    document.getElementById('resultDecode').innerHTML = messageDecode;
   });
 };

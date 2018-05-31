@@ -2,7 +2,7 @@
 ------
 ## Descripción 
 
-Este proyecto fue creado en el proyecto ![Laboratoria](/home/nataly/Documentos/scl-2018-05-bc-core-am/src/img/logo-laboratoria.png), con motivos académicos.
+Este proyecto fue creado en el proyecto ![Laboratoria](http://www.ifblanco.cl/wp-content/uploads/2016/06/Laboratoria-codigo.png) , con motivos académicos.
 
 El objetivo es crear una aplicación que sea capas de Cifrar y Descifrar mensajes, para usarlos en la planificación de una fiesta y que el festejado, debido a su curiosidad, no pueda acceder a ellos.
 
@@ -34,9 +34,8 @@ Descarga Git de [git-scm.com][3] y sigue las instrucciones.
 
 Si no lo tienes ya instalado, git debería estar disponible a través del administrador de paquetes, prueba con:
 
-sudo apt install git
-# o
-sudo yum install git
+    sudo apt install git
+    sudo yum install git
 
 ## Dependencias
 

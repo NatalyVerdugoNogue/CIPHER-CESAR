@@ -53,6 +53,7 @@ window.cipher = {
     return finalMessageDecode;
   },
 
+
   //Función que lee offset y retorna dos metodos que leen el mensaje
   createCipherWithOffset: (whitOffset) => {
     return {

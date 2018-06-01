@@ -26,4 +26,24 @@ describe('cipher', () => {
     });
   });
 
+  describe('cipher.createCipherWithOffset', () => {
+
+    it('debería ser una función', () => {
+      assert.equal(typeof window.cipher.createCipherWithOffset, 'function');
+    });
+
+    const withOffsetEncode = window.cipher.createCipherWithOffset(18);
+    const encodeMessage = withOffsetEncode.encode('laboratoria');
+
+    it('deberia retornar "DSTGJSLGJAS" para "laboratoria" con offset 18', () => {
+      assert.equal(encodeMessage, 'DSTGJSLGJAS');
+    });
+
+    const whithOffsetDecode = window.cipher.createCipherWithOffset(18);
+    const decodeMessage = whithOffsetDecode.decode('dstgjslgjas');
+
+    it('debería retornar "LABORATORIA" para "dstgjslgjas" con offset 18', () => {
+      assert.equal(decodeMessage, 'LABORATORIA');
+    });
+  });
 });

@@ -10,7 +10,6 @@ window.onload = () => {
     const stringEncode = document.getElementById('textAreaEncode').value;
     const offsetMy = parseInt(document.getElementById('myOffset').value);
     const whitFunction = window.cipher.createCipherWithOffset(offsetMy);
-    console.log(whitFunction);
     const messageEncode = whitFunction.encode(stringEncode);
     document.getElementById('resultEncode').innerHTML = messageEncode;
   });

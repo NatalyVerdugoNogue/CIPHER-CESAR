@@ -2,7 +2,7 @@
 ------
 ## Descripción 
 
-Este trabajo fue creado en el proyecto ![Laboratoria](/home/nataly/Documentos/scl-2018-05-bc-core-am/img/logo-laboratoria.png) , con motivos académicos.
+Este trabajo fue creado en el proyecto ![Laboratoria](https://github.com/NatalyVerdugoNogue/scl-2018-05-bc-core-am/raw/master/img/logo-laboratoria.png) , con motivos académicos.
 
 El objetivo es crear una aplicación que sea capas de Cifrar y Descifrar mensajes, para usarlos en la planificación de una fiesta y que el festejado, debido a su curiosidad, no pueda acceder a ellos.
 
@@ -10,7 +10,7 @@ El objetivo es crear una aplicación que sea capas de Cifrar y Descifrar mensaje
 
 En la aplicación se debe escribir un mensaje utilizando solamente letras (excluir números y símbolos) en los cuadros de texto y ademas se debe escribir un offset (cantidad de espacios que deben desplazarse las letras) y finalmente apretar el botón para que se cifre el mensaje.
 
-![captura pantalla](/home/nataly/Documentos/scl-2018-05-bc-core-am/img/captura-cipher.png)
+![captura pantalla](https://github.com/NatalyVerdugoNogue/scl-2018-05-bc-core-am/raw/master/img/captura-cipher.png)
 
 ## Guía de instalación
 

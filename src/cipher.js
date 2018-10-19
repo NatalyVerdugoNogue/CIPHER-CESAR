@@ -25,11 +25,11 @@ window.cipher = {
       // Concatenación del mensaje
       finalMessageEncode = finalMessageEncode + letterResEncode;
     }
-    //Retorno de mensaje codificado
+    // Retorno de mensaje codificado
     return finalMessageEncode;
   },
 
-  //Función decode, con la misma estructura que encode, cambio de variables y formula matemática
+  // Función decode, con la misma estructura que encode, cambio de variables y formula matemática
   decode: (stringDecode, offsetDecode) => {
 
     const stringMayDecode = stringDecode.toUpperCase();
@@ -54,7 +54,7 @@ window.cipher = {
   },
 
 
-  //Función que lee offset y retorna dos metodos que leen el mensaje
+  // Función que lee offset y retorna dos metodos que leen el mensaje
   createCipherWithOffset: (whitOffset) => {
     return {
       encode: (stringEncode) => {
